@@ -1,0 +1,82 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://bwn3xhyhx2mx"]
+
+[ext_resource type="Texture2D" uid="uid://dikaop4nchj18" path="res://sprites/mago_spritesheet.png" id="1_u5ew4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40o7f"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jq1v"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(16, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nw58"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(32, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1051c"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(48, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0q8w"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(64, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qe23b"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7vin"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(0, 20, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyttj"]
+atlas = ExtResource("1_u5ew4")
+region = Rect2(16, 20, 16, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40o7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jq1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nw58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1051c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0q8w")
+}],
+"loop": true,
+"name": &"correr",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qe23b")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7vin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyttj")
+}],
+"loop": true,
+"name": &"saltar",
+"speed": 20.0
+}]

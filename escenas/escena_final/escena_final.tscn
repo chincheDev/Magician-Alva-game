@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2pwj8xyhvsvw"]
+
+[ext_resource type="StyleBox" uid="uid://cpcdmccj1mun2" path="res://estilos_botones/normal.tres" id="1_26fy2"]
+[ext_resource type="StyleBox" uid="uid://by7affwcse4m4" path="res://estilos_botones/pressed.tres" id="2_wdej6"]
+[ext_resource type="StyleBox" uid="uid://br6dv1wuky6rj" path="res://estilos_botones/hover.tres" id="3_60s00"]
+[ext_resource type="StyleBox" uid="uid://chl323rpno4o5" path="res://estilos_botones/focused.tres" id="4_xydvs"]
+[ext_resource type="Script" uid="uid://p7f8elbwn401" path="res://escenas/menu_principal/boton_salir.gd" id="5_ig2kt"]
+
+[node name="EscenaFinal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -191.0
+offset_right = 164.0
+offset_bottom = 191.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="WinLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 80
+text = "You win!"
+
+[node name="Salir" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 2
+theme_override_constants/align_to_largest_stylebox = 2
+theme_override_constants/line_spacing = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = ExtResource("1_26fy2")
+theme_override_styles/pressed = ExtResource("2_wdej6")
+theme_override_styles/hover = ExtResource("3_60s00")
+theme_override_styles/focus = ExtResource("4_xydvs")
+text = "Exit"
+script = ExtResource("5_ig2kt")
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Creditos" type="Label" parent="CanvasLayer/VBoxContainer"]
+modulate = Color(1, 1, 1, 0.61960787)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Developed by chinche"
+
+[node name="Creditos2" type="Label" parent="CanvasLayer/VBoxContainer"]
+modulate = Color(1, 1, 1, 0.61960787)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Original project by Alva Majo"
